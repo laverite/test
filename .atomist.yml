@@ -1,0 +1,38 @@
+---
+kind: "operation"
+client: "rug-cli 0.17.1"
+editor:
+  name: "atomist-rugs.travis-editors.EnableTravisForRugArchiveDSL"
+  group: "atomist-rugs"
+  artifact: "travis-editors"
+  version: "0.4.0"
+  origin:
+    repo: "atomist-rugs/travis-editors.git"
+    branch: "master"
+    sha: "ffa56d6"
+  parameters:
+    - "repo_slug": "atomist-rugs/flask-service"
+    - "github_token": "4**************************************b"
+    - "maven_base_url": "https://atomist.jfrog.io/atomist"
+    - "maven_user": "t************h"
+    - "maven_token": "A***********************************************************************i"
+    - "org": ".org"
+
+---
+kind: "operation"
+client: "atomist 1.2"
+generator:
+  name: "NewFlaskMicroserviceProject"
+  group: "atomist-rugs"
+  artifact: "flask-service"
+  version: "0.1.2"
+  origin:
+    repo: "atomist-rugs/flask-service.git"
+    branch: "8be0d3c556974930feebd0bb480c581a56813890"
+    sha: "8be0d3c"
+  parameters:
+    - "project_name": "test"
+    - "app_name": "testAPp"
+    - "version": "0.1.0"
+    - "description": "My new project"
+
